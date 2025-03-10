@@ -38,7 +38,7 @@ public class TaskController {
     }
 
     @GetMapping("/{id}/toggle")
-    public String deleteTask(@PathVariable Long id){
+    public String toggleTask(@PathVariable Long id){
         taskService.toggleTask(id);
         return "redirect:/";
     }
